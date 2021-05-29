@@ -37,6 +37,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
+            pip install pytest
             pip install -r requirements.txt
       #3: Ran linter and unit tests
       - run:
